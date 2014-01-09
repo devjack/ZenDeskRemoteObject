@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\Trigger;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class TriggerTest extends AbstractTestCase
 {
@@ -31,7 +32,7 @@ class TriggerTest extends AbstractTestCase
 
         $this->assertEquals($trigger->getId(), null);
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
 
         $trigger->setTitle($id);
         $trigger->setConditions(array(
@@ -61,7 +62,7 @@ class TriggerTest extends AbstractTestCase
         }
         $trigger = self::$trigger;
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
         $updatedAt = $trigger->getUpdatedAt();
 
         $trigger->setTitle($id);
@@ -81,7 +82,7 @@ class TriggerTest extends AbstractTestCase
         $trigger->delete();
 
         // to change, tests crossed
-        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\RuntimeMethodException', '404');
+        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\ResponseErrorException', 'RecordNotFound');
         $triggerService = $this->getSM()->get('ZenDesk\Service\TriggerService');
         $triggerService->get($trigger->getId());
     }

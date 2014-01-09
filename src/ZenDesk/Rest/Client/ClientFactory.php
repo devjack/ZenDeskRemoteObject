@@ -7,7 +7,6 @@ use RestRemoteObject\Client\Rest\Versioning\UriVersioningStrategy;
 use RestRemoteObject\Client\Rest\Authentication\HttpAuthenticationStrategy;
 use RestRemoteObject\Client\Rest\Format\Format;
 use RestRemoteObject\Client\Rest\Format\ExtensionFormatStrategy;
-use RestRemoteObject\Adapter\Rest as RestAdapter;
 use RestRemoteObject\Client\Rest\Debug\Debug;
 use RestRemoteObject\Client\Rest\Debug\Verbosity\Verbosity;
 use RestRemoteObject\Client\Rest\Debug\Writer\Stdout;

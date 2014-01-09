@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\User;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class UserTest extends AbstractTestCase
 {
@@ -26,12 +27,12 @@ class UserTest extends AbstractTestCase
     public function testCanCreateAUser()
     {
         $user = new User();
-        /** @var \ZenDesk\Service\UserService $user */
+        /** @var \ZenDesk\Service\UserService $service */
         $service = $this->getSM()->get('ZenDesk\Service\UserService');
 
         $this->assertEquals($user->getId(), null);
 
-        $id = uniqid();
+        $id = CacheHttpClient::getUniqId();
 
         $user->setName($name = 'Vince' . $id);
         $user->setEmail('blanchon.vincent+zd-tests'.$id.'@gmail.com');
@@ -51,7 +52,7 @@ class UserTest extends AbstractTestCase
         }
 
         $user = self::$user;
-        $id = uniqid();
+        $id = CacheHttpClient::getUniqId() . 'new';
 
         $updatedAt = $user->getUpdatedAt();
 

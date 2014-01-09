@@ -6,6 +6,7 @@ use Zend\ServiceManager\Config;
 use Zend\ServiceManager\ServiceManager;
 
 use PHPUnit_Framework_TestCase;
+use ZenDeskTestAssets\CacheHttpClient;
 
 abstract class AbstractTestCase extends PHPUnit_Framework_TestCase
 {
@@ -14,11 +15,27 @@ abstract class AbstractTestCase extends PHPUnit_Framework_TestCase
      */
     protected $sm;
 
+    /** @var string */
+    public static $testName;
+
     public function setUp()
     {
         $config = include __DIR__ . '/../../config/config.php';
         $config = new Config($config);
         $this->sm = new ServiceManager($config);
+
+        /** @var \RestRemoteObject\Client\Rest $rest */
+        $rest = $this->sm->get('ZenDesk\Rest\Client');
+        $rest->setHttpClient(new CacheHttpClient());
+
+        self::$testName = get_class($this) . '::' . $this->getName();
+    }
+
+    public function tearDown()
+    {
+        if ($this->hasFailed()) {
+            CacheHttpClient::deprecate(self::$testName);
+        }
     }
 
     /**

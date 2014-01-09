@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\Automation;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class AutomationTest extends AbstractTestCase
 {
@@ -22,7 +23,7 @@ class AutomationTest extends AbstractTestCase
         $this->assertNotNull($automation->getId());
     }
 
-    public function testCanCreateATrigger()
+    public function testCanCreateAnAutomation()
     {
         $automation = new Automation();
         /** @var \ZenDesk\Service\AutomationService $service */
@@ -30,7 +31,7 @@ class AutomationTest extends AbstractTestCase
 
         $this->assertEquals($automation->getId(), null);
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
 
         $automation->setTitle($id);
         $automation->setConditions(array(
@@ -60,7 +61,7 @@ class AutomationTest extends AbstractTestCase
         }
         $automation = self::$automation;
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
         $updatedAt = $automation->getUpdatedAt();
 
         $automation->setTitle($id);
@@ -77,11 +78,10 @@ class AutomationTest extends AbstractTestCase
         }
 
         $automation = self::$automation;
-
         $automation->delete();
 
         // to change, tests crossed
-        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\RuntimeMethodException', '404');
+        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\ResponseErrorException', 'RecordNotFound');
         /** @var \ZenDesk\Service\AutomationService $service */
         $service = $this->getSM()->get('ZenDesk\Service\AutomationService');
         $service->get($automation->getId());

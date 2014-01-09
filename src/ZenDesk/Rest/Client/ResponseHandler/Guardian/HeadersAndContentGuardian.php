@@ -36,14 +36,15 @@ class HeadersAndContentGuardian implements GuardianInterface
             }
         }
 
-        $content = $response->getContent();
+        $content = $response->getBody();
 
         $content = json_decode($content, true);
         if (isset($content['error'])) {
+            $message = $content['error'];
             if (isset($content['message'])) {
-                $message = $content['message'];
+                $message .= ', '. $content['message'];
             } else {
-                $message = $content['description'] .'. ';
+                $message .= ', '. $content['description'] .'. ';
                 if (isset($content['details'])) {
                     foreach($content['details'] as $type) {
                         foreach ($type as $msg) {

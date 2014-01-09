@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\View;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class ViewTest extends AbstractTestCase
 {
@@ -25,12 +26,12 @@ class ViewTest extends AbstractTestCase
     public function testCanCreateAView()
     {
         $view = new View();
-        /** @var \ZenDesk\Service\ViewService $view */
+        /** @var \ZenDesk\Service\ViewService $service */
         $service = $this->getSM()->get('ZenDesk\Service\ViewService');
 
         $this->assertEquals($view->getId(), null);
 
-        $id = uniqid();
+        $id = CacheHttpClient::getUniqId();
 
         $view->setTitle($title = 'View ' . $id);
         $view->setConditions(array(
@@ -55,7 +56,7 @@ class ViewTest extends AbstractTestCase
 
         $view = self::$view;
 
-        $id = uniqid();
+        $id = CacheHttpClient::getUniqId();
         $updatedAt = $view->getUpdatedAt();
 
         $view->setTitle($title = 'View ' . $id);
@@ -78,7 +79,7 @@ class ViewTest extends AbstractTestCase
         $this->assertTrue(count($tickets) > 0);
     }
 
-    public function testCanDeleteAUser()
+    public function testCanDeleteAView()
     {
         if (!self::$view) {
             $this->markTestSkipped('View entity must be defined');
@@ -88,7 +89,7 @@ class ViewTest extends AbstractTestCase
         $view->delete();
 
         // to change, tests crossed
-        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\RuntimeMethodException', '404');
+        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\ResponseErrorException', 'RecordNotFound');
         $viewService = $this->getSM()->get('ZenDesk\Service\ViewService');
         $viewService->get($view->getId());
     }

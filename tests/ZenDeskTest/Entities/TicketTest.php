@@ -140,7 +140,7 @@ class TicketTest extends AbstractTestCase
         $ticket->delete();
 
         // to change, tests crossed
-        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\RuntimeMethodException', '404');
+        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\ResponseErrorException', 'RecordNotFound');
         /** @var \ZenDesk\Service\TicketService $service */
         $service = $this->getSM()->get('ZenDesk\Service\TicketService');
         $service->get($ticket->getId());

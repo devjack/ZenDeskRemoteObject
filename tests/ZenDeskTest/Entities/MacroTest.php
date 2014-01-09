@@ -5,11 +5,15 @@ namespace ZenDeskTest\Entity;
 use ZenDesk\Entity\Parameter\Restriction;
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\Macro;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class MacroTest extends AbstractTestCase
 {
     /** @var \ZenDesk\Entity\Macro */
     protected static $macro;
+
+    /** @var \ZenDesk\Entity\Macro */
+    protected static $macroRestriction;
 
     public function testCanSerialize()
     {
@@ -32,7 +36,7 @@ class MacroTest extends AbstractTestCase
 
         $this->assertEquals($macro->getId(), null);
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
 
         $macro->setTitle($id);
         $macro->setActions(array(
@@ -59,7 +63,7 @@ class MacroTest extends AbstractTestCase
 
         $this->assertEquals($macro->getId(), null);
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
 
         $macro->setTitle($id);
         $macro->setActions(array(
@@ -75,7 +79,7 @@ class MacroTest extends AbstractTestCase
         $this->assertNotNull($macro->getRestriction());
         $this->assertEquals($admin->getId(), $macro->getRestriction()->getId());
 
-        self::$macro = $macro;
+        self::$macroRestriction = $macro;
     }
 
     public function testCanUpdateAMacroWithRestriction()
@@ -85,7 +89,7 @@ class MacroTest extends AbstractTestCase
         }
         $macro = self::$macro;
 
-        $id = uniqid(__METHOD__);
+        $id = CacheHttpClient::getUniqId() . __METHOD__;
         $updatedAt = $macro->getUpdatedAt();
 
         $macro->setTitle($id);
@@ -105,9 +109,12 @@ class MacroTest extends AbstractTestCase
         $macro->delete();
 
         // to change, tests crossed
-        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\RuntimeMethodException', '404');
+        $this->setExpectedException('RestRemoteObject\Client\Rest\Exception\ResponseErrorException', 'RecordNotFound');
         /** @var \ZenDesk\Service\MacroService $service */
         $service = $this->getSM()->get('ZenDesk\Service\MacroService');
         $service->get($macro->getId());
+
+        $macro = self::$macroRestriction;
+        $macro->delete();
     }
 }

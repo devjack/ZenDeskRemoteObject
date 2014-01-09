@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\Agent;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class AgentTest extends AbstractTestCase
 {
@@ -31,7 +32,7 @@ class AgentTest extends AbstractTestCase
 
         $this->assertEquals($agent->getId(), null);
 
-        $id = uniqid();
+        $id = CacheHttpClient::getUniqId();
 
         $agent->setName($name = 'Vince' . $id);
         $agent->setEmail('blanchon.vincent+zd-tests'.$id.'@gmail.com');
@@ -51,7 +52,7 @@ class AgentTest extends AbstractTestCase
         }
 
         $agent = self::$agent;
-        $id = uniqid();
+        $id = CacheHttpClient::getUniqId() . 'new';
 
         $updatedAt = $agent->getUpdatedAt();
 
@@ -76,6 +77,7 @@ class AgentTest extends AbstractTestCase
         $service = $this->getSM()->get('ZenDesk\Service\AgentService');
         /** @var \ZenDesk\Entity\Agent $admin */
         $admin = $service->me(); // user with tickets -- to change, bad tests crossed
+        $this->assertNotNull($admin->getId());
         $tickets = $admin->getTickets();
 
         $this->assertTrue(count($tickets) > 0);

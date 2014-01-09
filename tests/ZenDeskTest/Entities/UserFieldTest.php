@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\UserField;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class UserFieldTest extends AbstractTestCase
 {
@@ -33,8 +34,8 @@ class UserFieldTest extends AbstractTestCase
         $this->assertEquals($userField->getId(), null);
 
         $userField->setType('text');
-        $userField->setTitle('My awesome field ' . uniqid());
-        $userField->setKey('awesome_field_' . uniqid());
+        $userField->setTitle('My awesome field ' . CacheHttpClient::getUniqId());
+        $userField->setKey('awesome_field_' . CacheHttpClient::getUniqId());
         $service->persist($userField);
 
         $this->assertNotNull($userField->getId());

@@ -1,0 +1,19 @@
+a:2:{s:7:"headers";s:650:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:11:38 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 522
+Connection: close
+Status: 201 Created
+X-Zendesk-API-Version: v2
+Location: https://4mation.zendesk.com/api/v2/triggers/30204450.json
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "08149224d2d228f9b2dcbba7d9bc3d04"
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app2.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: 5b1b2043f979adce38c1206b1f1e4403
+X-Runtime: 0.227423
+X-Rack-Cache: invalidate, pass
+X-Zendesk-Request-Id: f6bcfe1ce0b8094e4fec
+X-Content-Type-Options: nosniff
+";s:7:"content";s:522:"{"trigger":{"url":"https://4mation.zendesk.com/api/v2/triggers/30204450.json","id":30204450,"title":"52ce2f3f45d1bZenDeskTest\\Entity\\TriggerTest::testCanCreateATrigger","active":true,"updated_at":"2014-01-09T05:11:38Z","created_at":"2014-01-09T05:11:38Z","actions":[{"field":"priority","value":"high"}],"conditions":{"all":[{"field":"status","operator":"is","value":"open"},{"field":"priority","operator":"less_than","value":"high"}],"any":[{"field":"priority","operator":"less_than","value":"high"}]},"position":10010}}";}

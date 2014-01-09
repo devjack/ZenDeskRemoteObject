@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "fourmation/rest-remote-object": "1.0.*",
+        "fourmation/rest-remote-object": "master-dev",
         "ocramius/proxy-manager": "master-dev",
         "zendframework/zend-loader": "2.*",
         "zendframework/zend-servicemanager": "2.*"
@@ -21,7 +21,8 @@
     "autoload": {
         "psr-0": {
             "ZenDesk\\" : "src",
-            "ZenDeskTest\\" : "tests"
+            "ZenDeskTest\\" : "tests",
+            "ZenDeskTestAssets\\" : "tests"
         }
     },
     "extra": {

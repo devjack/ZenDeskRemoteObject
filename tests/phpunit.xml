@@ -2,10 +2,32 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/3.7/phpunit.xsd"
         bootstrap="bootstrap.php"
+        colors="true"
+        verbose="true"
         >
     <testsuites>
         <testsuite name="ZenDeskTest">
             <directory>./ZenDeskTest</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../src/</directory>
+            <exclude>
+                <file>../src/ZenDesk/Service/Remote/AgentServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/AutomationServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/CommentServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/MacroServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/OrganizationFieldServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/SearchServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/TagServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/TicketServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/TicketFieldServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/TriggerServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/UserFieldServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/UserServiceInterface.php</file>
+                <file>../src/ZenDesk/Service/Remote/ViewServiceInterface.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>

@@ -1,0 +1,19 @@
+a:2:{s:7:"headers";s:659:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:11:16 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 378
+Connection: close
+Status: 201 Created
+X-Zendesk-API-Version: v2
+Location: https://4mation.zendesk.com/api/v2/organization_fields/16019.json
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "6345c12e26db0817dfdd921f38199505"
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app13.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: 53cb4eadf7b88d81df11906715220c51
+X-Runtime: 0.262952
+X-Rack-Cache: invalidate, pass
+X-Zendesk-Request-Id: ca1ed9ccaa7924962531
+X-Content-Type-Options: nosniff
+";s:7:"content";s:378:"{"organization_field":{"url":"https://4mation.zendesk.com/api/v2/organization_fields/16019.json","id":16019,"type":"text","key":"awesome_field_52ce2f3f45d1b","title":"My awesome field 52ce2f3f45d1b","description":"My awesome field 52ce2f3f45d1b","position":9999,"active":true,"regexp_for_validation":null,"created_at":"2014-01-09T05:11:16Z","updated_at":"2014-01-09T05:11:16Z"}}";}

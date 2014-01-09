@@ -4,6 +4,7 @@ namespace ZenDeskTest\Entity;
 
 use ZenDeskTest\AbstractTestCase;
 use ZenDesk\Entity\OrganizationField;
+use ZenDeskTestAssets\CacheHttpClient;
 
 class OrganizationFieldTest extends AbstractTestCase
 {
@@ -32,8 +33,8 @@ class OrganizationFieldTest extends AbstractTestCase
         $this->assertEquals($organizationField->getId(), null);
 
         $organizationField->setType('text');
-        $organizationField->setTitle('My awesome field ' . uniqid());
-        $organizationField->setKey('awesome_field_' . uniqid());
+        $organizationField->setTitle('My awesome field ' . CacheHttpClient::getUniqId());
+        $organizationField->setKey('awesome_field_' . CacheHttpClient::getUniqId());
         $service->persist($organizationField);
 
         $this->assertNotNull($organizationField->getId());

@@ -1,0 +1,19 @@
+a:2:{s:7:"headers";s:649:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:10:25 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 886
+Connection: close
+Status: 201 Created
+X-Zendesk-API-Version: v2
+Location: https://4mation.zendesk.com/api/v2/users/297951159.json
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "fd52f8ff458ddd7ef2cce6b2efe7ca90"
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app15.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: 325f2773ce61a52d55f7a8a6ef8f5603
+X-Runtime: 0.281337
+X-Rack-Cache: invalidate, pass
+X-Zendesk-Request-Id: 1cb67c9b98e71c7ac677
+X-Content-Type-Options: nosniff
+";s:7:"content";s:886:"{"user":{"id":297951159,"url":"https://4mation.zendesk.com/api/v2/users/297951159.json","name":"Vince52ce2f3f45d1b","email":"blanchon.vincent+zd-tests52ce2f3f45d1b@gmail.com","created_at":"2014-01-09T05:10:25Z","updated_at":"2014-01-09T05:10:25Z","time_zone":"Magadan","phone":null,"photo":null,"locale_id":null,"locale":"en-US","organization_id":null,"role":"agent","verified":false,"external_id":null,"tags":[],"alias":null,"active":true,"shared":false,"shared_agent":false,"last_login_at":null,"signature":null,"details":null,"notes":null,"custom_role_id":null,"moderator":false,"ticket_restriction":null,"only_private_comments":false,"restricted_agent":false,"suspended":false,"user_fields":{"awesome_field_52b23e17dadbb":null,"awesome_field_52b23e3ab8cf9":null,"awesome_field_52b2464c7fdb6":null,"awesome_field_52b2638b07952":null,"awesome_field_52b263af6178f":null,"title":null}}}";}
