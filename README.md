@@ -1,7 +1,7 @@
 # ZenDesk Remote
 
 This library provide a REST client to ZenDesk remote call.
-This project is based on [ZenDeskRemoteObject](https://github.com/fourmation/ZenDeskRemoteObject) which allow to control a REST API with objects.
+This project is based on [RestRemoteObject](https://github.com/fourmation/RestRemoteObject) which allow to control a REST API with objects.
 
 [![Build Status](https://api.travis-ci.org/fourmation/ZenDeskRemoteObject.png?branch=master)](https://travis-ci.org/fourmation/ZenDeskRemoteObject)
 [![Coverage Status](https://coveralls.io/repos/fourmation/ZenDeskRemoteObject/badge.png?branch=master)](https://coveralls.io/r/fourmation/ZenDeskRemoteObject)
