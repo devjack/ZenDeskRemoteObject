@@ -1,7 +1,12 @@
 # ZenDesk Remote
 
 This library provide a REST client to ZenDesk remote call.
-This project is based on RestRemoteObject which allow to control a REST API with objects.
+This project is based on [ZenDeskRemoteObject](https://github.com/fourmation/ZenDeskRemoteObject) which allow to control a REST API with objects.
+
+[![Build Status](https://api.travis-ci.org/fourmation/ZenDeskRemoteObject.png?branch=master)](https://travis-ci.org/fourmation/ZenDeskRemoteObject)
+[![Coverage Status](https://coveralls.io/repos/fourmation/ZenDeskRemoteObject/badge.png?branch=master)](https://coveralls.io/r/fourmation/ZenDeskRemoteObject)
+[![Latest Stable Version](https://poser.pugx.org/fourmation/zendesk-remote-object/v/stable.png)](https://packagist.org/packages/fourmation/zendesk-remote-object)
+[![Latest Unstable Version](https://poser.pugx.org/fourmation/zendesk-remote-object/v/unstable.png)](https://packagist.org/packages/fourmation/zendesk-remote-object)
 
 ## Installation
 
@@ -12,9 +17,9 @@ php composer.phar require "fourmation/zendesk-remote-object:0.6.*"
 ## Architecture
 
 This project use Zend\ServiceManager to create entities or services. Each new entities or service calls must use the ServiceManager.
-Each entites and services pilot a remote rest proxy to call remote API. To know how to do remote call, read the RestRemoteObject documentation.
+Each entity and service pilot a remote rest proxy to call remote API. To know how to do remote call, read the ZenDeskRemoteObject documentation.
 
-## Usage exemple
+## Usage example
 
 All examples are in the `examples/` folder.
 
