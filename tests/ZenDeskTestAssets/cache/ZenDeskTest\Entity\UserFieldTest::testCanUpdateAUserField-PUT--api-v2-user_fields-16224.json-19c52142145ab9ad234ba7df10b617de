@@ -1,0 +1,16 @@
+a:2:{s:7:"headers";s:513:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:54:45 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: close
+Status: 200 OK
+X-Zendesk-API-Version: v2
+X-UA-Compatible: IE=Edge,chrome=1
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app2.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: 0e220d82b0ead754edc904eb54a677e3
+X-Runtime: 0.087854
+X-Rack-Cache: invalidate, pass
+X-Zendesk-Request-Id: f1d23ff0e94388d7c8c0
+X-Content-Type-Options: nosniff
+";s:7:"content";s:356:"{"user_field":{"url":"https://4mation.zendesk.com/api/v2/user_fields/16224.json","id":16224,"type":"text","key":"awesome_field_52ce3977a9760","title":"My awesome field updated","description":"My awesome field 52ce3977a9760","position":9999,"active":true,"regexp_for_validation":null,"created_at":"2014-01-09T05:54:44Z","updated_at":"2014-01-09T05:54:45Z"}}";}

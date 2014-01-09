@@ -1,0 +1,17 @@
+a:2:{s:7:"headers";s:547:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:54:28 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: close
+Status: 200 OK
+X-Zendesk-API-Version: v2
+Last-Modified: Thu, 09 Jan 2014 05:54:27 GMT
+Cache-Control: must-revalidate, private, max-age=0
+X-UA-Compatible: IE=Edge,chrome=1
+X-Zendesk-Origin-Server: app4.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: 38b20e51a1f8088807f6b814f9ad045d
+X-Runtime: 0.093680
+X-Rack-Cache: miss
+X-Zendesk-Request-Id: edb6f1d4aa02b3c07b75
+X-Content-Type-Options: nosniff
+";s:7:"content";s:554:"{"comments":[{"id":9534430159,"type":"Comment","author_id":274580849,"body":"Comment #1","html_body":"<p>Comment <a target=\"_blank\" href=\"/tickets/1\">#1</a></p>","public":true,"trusted":true,"attachments":[],"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"metadata":{"system":{"client":"Zend\\Http\\Client","ip_address":"150.101.192.90","location":"Sydney, 02, Australia","latitude":-33.86150000000001,"longitude":151.20549999999997},"custom":{}},"created_at":"2014-01-09T05:54:26Z"}],"next_page":null,"previous_page":null,"count":1}";}

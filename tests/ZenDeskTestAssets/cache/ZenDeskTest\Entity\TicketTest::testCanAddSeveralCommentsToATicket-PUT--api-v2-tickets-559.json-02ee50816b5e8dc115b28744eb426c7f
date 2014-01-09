@@ -1,0 +1,16 @@
+a:2:{s:7:"headers";s:514:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:54:32 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: close
+Status: 200 OK
+X-Zendesk-API-Version: v2
+X-UA-Compatible: IE=Edge,chrome=1
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app14.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: e4ccd1e2a836631e60e8ae39a84f9d7a
+X-Runtime: 0.322136
+X-Rack-Cache: invalidate, pass
+X-Zendesk-Request-Id: e59a00afb2953b53669a
+X-Content-Type-Options: nosniff
+";s:7:"content";s:2301:"{"ticket":{"url":"https://4mation.zendesk.com/api/v2/tickets/559.json","id":559,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2014-01-09T05:54:26Z","updated_at":"2014-01-09T05:54:32Z","type":null,"subject":"New ticket test","description":"Comment #1","priority":null,"status":"new","recipient":null,"requester_id":274580849,"submitter_id":274580849,"assignee_id":null,"organization_id":23090189,"group_id":20603339,"collaborator_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"due_at":null,"tags":["baz"],"custom_fields":[{"id":21200724,"value":""},{"id":21332060,"value":null},{"id":21214095,"value":null},{"id":21181294,"value":null},{"id":21199384,"value":null},{"id":21232135,"value":null},{"id":21186279,"value":null},{"id":21186289,"value":null},{"id":21457160,"value":null},{"id":21346579,"value":null},{"id":21457940,"value":null},{"id":21286959,"value":null},{"id":21355834,"value":null},{"id":21355844,"value":null},{"id":21329505,"value":null},{"id":21517190,"value":null},{"id":21297314,"value":null},{"id":21297074,"value":null},{"id":21297094,"value":null}],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[{"id":21200724,"value":""},{"id":21332060,"value":null},{"id":21214095,"value":null},{"id":21181294,"value":null},{"id":21199384,"value":null},{"id":21232135,"value":null},{"id":21186279,"value":null},{"id":21186289,"value":null},{"id":21457160,"value":null},{"id":21346579,"value":null},{"id":21457940,"value":null},{"id":21286959,"value":null},{"id":21355834,"value":null},{"id":21355844,"value":null},{"id":21329505,"value":null},{"id":21517190,"value":null},{"id":21297314,"value":null},{"id":21297074,"value":null},{"id":21297094,"value":null}],"ticket_form_id":null},"audit":{"id":9607527354,"ticket_id":559,"created_at":"2014-01-09T05:54:32Z","author_id":274580849,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"metadata":{"system":{"client":"Zend\\Http\\Client","ip_address":"120.151.150.174","location":"Baulkham Hills, 02, Australia","latitude":-33.75,"longitude":151.0},"custom":{}},"events":[{"id":9607527374,"type":"Comment","author_id":274580849,"body":"Comment number 2","html_body":"<p>Comment number 2</p>","public":true,"trusted":true,"attachments":[]}]}}";}

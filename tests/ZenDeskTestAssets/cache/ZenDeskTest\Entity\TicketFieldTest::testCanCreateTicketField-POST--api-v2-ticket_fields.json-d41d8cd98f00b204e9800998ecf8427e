@@ -1,19 +1,19 @@
-a:2:{s:7:"headers";s:656:"Server: nginx/1.4.2
-Date: Thu, 09 Jan 2014 05:11:20 GMT
+a:2:{s:7:"headers";s:655:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:54:21 GMT
 Content-Type: application/json; charset=UTF-8
 Content-Length: 499
 Connection: close
 Status: 201 Created
 X-Zendesk-API-Version: v2
-Location: https://4mation.zendesk.com/api/v2/ticket_fields/21517040.json
+Location: https://4mation.zendesk.com/api/v2/ticket_fields/21346589.json
 X-UA-Compatible: IE=Edge,chrome=1
-ETag: "c27a11ad330b9ad1d9f3b118e487f980"
+ETag: "5f7cfba000fc4a4b585bab3a7029ddca"
 Cache-Control: max-age=0, private, must-revalidate
-X-Zendesk-Origin-Server: app11.pod2.sac1.zdsys.com
+X-Zendesk-Origin-Server: app7.pod2.sac1.zdsys.com
 X-Zendesk-User-Id: 274580849
-X-Request-Id: 79f8fd3b1080ff03a41c70fa6baf76c0
-X-Runtime: 0.576247
+X-Request-Id: eebac193cb164b41229b1eed979a280f
+X-Runtime: 0.562004
 X-Rack-Cache: invalidate, pass
-X-Zendesk-Request-Id: 1a9b5dc3ee4daa044481
+X-Zendesk-Request-Id: b07d61fcdd261b310780
 X-Content-Type-Options: nosniff
-";s:7:"content";s:499:"{"ticket_field":{"url":"https://4mation.zendesk.com/api/v2/ticket_fields/21517040.json","id":21517040,"type":"text","title":"My awesome field","description":"My awesome field","position":9999,"active":true,"required":false,"collapsed_for_agents":false,"regexp_for_validation":null,"title_in_portal":"My awesome field","visible_in_portal":false,"editable_in_portal":false,"required_in_portal":false,"tag":null,"created_at":"2014-01-09T05:11:20Z","updated_at":"2014-01-09T05:11:20Z","removable":true}}";}
+";s:7:"content";s:499:"{"ticket_field":{"url":"https://4mation.zendesk.com/api/v2/ticket_fields/21346589.json","id":21346589,"type":"text","title":"My awesome field","description":"My awesome field","position":9999,"active":true,"required":false,"collapsed_for_agents":false,"regexp_for_validation":null,"title_in_portal":"My awesome field","visible_in_portal":false,"editable_in_portal":false,"required_in_portal":false,"tag":null,"created_at":"2014-01-09T05:54:21Z","updated_at":"2014-01-09T05:54:21Z","removable":true}}";}

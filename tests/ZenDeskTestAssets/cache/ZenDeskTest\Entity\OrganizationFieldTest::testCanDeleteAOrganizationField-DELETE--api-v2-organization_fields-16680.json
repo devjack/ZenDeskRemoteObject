@@ -1,0 +1,18 @@
+a:2:{s:7:"headers";s:575:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:54:20 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 1
+Connection: close
+Status: 200 OK
+X-Zendesk-API-Version: v2
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "7215ee9c7d9dc229d2921a40e899ec5f"
+Cache-Control: max-age=0, private, must-revalidate
+X-Zendesk-Origin-Server: app11.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: 1e35f528852c858b6770ac9a2bab0768
+X-Runtime: 0.102728
+X-Rack-Cache: invalidate, pass
+X-Zendesk-Request-Id: a69d8fbcbae75735cefe
+X-Content-Type-Options: nosniff
+";s:7:"content";s:1:" ";}

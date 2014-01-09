@@ -1,19 +1,19 @@
 a:2:{s:7:"headers";s:649:"Server: nginx/1.4.2
-Date: Thu, 09 Jan 2014 05:11:10 GMT
+Date: Thu, 09 Jan 2014 05:54:13 GMT
 Content-Type: application/json; charset=UTF-8
 Content-Length: 358
 Connection: close
 Status: 201 Created
 X-Zendesk-API-Version: v2
-Location: https://4mation.zendesk.com/api/v2/macros/29252169.json
+Location: https://4mation.zendesk.com/api/v2/macros/30205240.json
 X-UA-Compatible: IE=Edge,chrome=1
-ETag: "bee2e28c643b673d5c812c986479c88b"
+ETag: "28f7e2313cbcf83424d5690a26e3c693"
 Cache-Control: max-age=0, private, must-revalidate
-X-Zendesk-Origin-Server: app16.pod2.sac1.zdsys.com
+X-Zendesk-Origin-Server: app13.pod2.sac1.zdsys.com
 X-Zendesk-User-Id: 274580849
-X-Request-Id: 3682347674656ca76de95a14a8999f07
-X-Runtime: 0.235125
+X-Request-Id: 4cfd7f640a6ae8e7b09978410c87e747
+X-Runtime: 0.319055
 X-Rack-Cache: invalidate, pass
-X-Zendesk-Request-Id: bbd12044abb5ea24bd34
+X-Zendesk-Request-Id: dca0a313d47d5f97eba4
 X-Content-Type-Options: nosniff
-";s:7:"content";s:358:"{"macro":{"url":"https://4mation.zendesk.com/api/v2/macros/29252169.json","id":29252169,"title":"52ce2f3f45d1bZenDeskTest\\Entity\\MacroTest::testCanCreateAMacroWithRestriction","active":true,"updated_at":"2014-01-09T05:11:10Z","created_at":"2014-01-09T05:11:10Z","restriction":{"type":"User","id":274580849},"actions":[{"field":"priority","value":"high"}]}}";}
+";s:7:"content";s:358:"{"macro":{"url":"https://4mation.zendesk.com/api/v2/macros/30205240.json","id":30205240,"title":"52ce3977a9760ZenDeskTest\\Entity\\MacroTest::testCanCreateAMacroWithRestriction","active":true,"updated_at":"2014-01-09T05:54:13Z","created_at":"2014-01-09T05:54:13Z","restriction":{"type":"User","id":274580849},"actions":[{"field":"priority","value":"high"}]}}";}

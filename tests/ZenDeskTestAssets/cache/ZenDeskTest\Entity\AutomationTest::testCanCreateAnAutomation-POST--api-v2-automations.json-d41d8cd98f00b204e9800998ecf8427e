@@ -1,19 +1,19 @@
 a:2:{s:7:"headers";s:654:"Server: nginx/1.4.2
-Date: Thu, 09 Jan 2014 05:11:03 GMT
+Date: Thu, 09 Jan 2014 05:54:06 GMT
 Content-Type: application/json; charset=UTF-8
 Content-Length: 535
 Connection: close
 Status: 201 Created
 X-Zendesk-API-Version: v2
-Location: https://4mation.zendesk.com/api/v2/automations/29252159.json
+Location: https://4mation.zendesk.com/api/v2/automations/29543115.json
 X-UA-Compatible: IE=Edge,chrome=1
-ETag: "053a7e47210fc84bf244cc3e975d082e"
+ETag: "831e83fc76932003bed593e84077340e"
 Cache-Control: max-age=0, private, must-revalidate
-X-Zendesk-Origin-Server: app15.pod2.sac1.zdsys.com
+X-Zendesk-Origin-Server: app12.pod2.sac1.zdsys.com
 X-Zendesk-User-Id: 274580849
-X-Request-Id: 74c152615e8461ae6eb68def15b93755
-X-Runtime: 0.307753
+X-Request-Id: 5e33a6910853c65fc05dee0029a1356a
+X-Runtime: 0.334744
 X-Rack-Cache: invalidate, pass
-X-Zendesk-Request-Id: 747a08caa957eefc2233
+X-Zendesk-Request-Id: 14d317c420cdf39456d6
 X-Content-Type-Options: nosniff
-";s:7:"content";s:535:"{"automation":{"url":"https://4mation.zendesk.com/api/v2/automations/29252159.json","id":29252159,"title":"52ce2f3f45d1bZenDeskTest\\Entity\\AutomationTest::testCanCreateAnAutomation","active":true,"updated_at":"2014-01-09T05:11:03Z","created_at":"2014-01-09T05:11:03Z","actions":[{"field":"priority","value":"high"}],"conditions":{"all":[{"field":"status","operator":"is","value":"open"},{"field":"priority","operator":"less_than","value":"high"}],"any":[{"field":"priority","operator":"less_than","value":"high"}]},"position":10008}}";}
+";s:7:"content";s:535:"{"automation":{"url":"https://4mation.zendesk.com/api/v2/automations/29543115.json","id":29543115,"title":"52ce3977a9760ZenDeskTest\\Entity\\AutomationTest::testCanCreateAnAutomation","active":true,"updated_at":"2014-01-09T05:54:06Z","created_at":"2014-01-09T05:54:06Z","actions":[{"field":"priority","value":"high"}],"conditions":{"all":[{"field":"status","operator":"is","value":"open"},{"field":"priority","operator":"less_than","value":"high"}],"any":[{"field":"priority","operator":"less_than","value":"high"}]},"position":10015}}";}

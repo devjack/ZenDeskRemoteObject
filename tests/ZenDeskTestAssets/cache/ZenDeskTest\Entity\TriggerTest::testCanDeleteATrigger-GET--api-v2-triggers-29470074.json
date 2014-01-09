@@ -1,0 +1,15 @@
+a:2:{s:7:"headers";s:457:"Server: nginx/1.4.2
+Date: Thu, 09 Jan 2014 05:54:43 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: close
+Status: 404 Not Found
+X-Zendesk-API-Version: v2
+X-UA-Compatible: IE=Edge,chrome=1
+Cache-Control: no-cache, private
+X-Zendesk-Origin-Server: app9.pod2.sac1.zdsys.com
+X-Zendesk-User-Id: 274580849
+X-Request-Id: f3bb4eddcc10d8e595235ea8fedf8d77
+X-Runtime: 0.076623
+X-Rack-Cache: miss
+X-Zendesk-Request-Id: e1c910f40c2f6eec9091
+";s:7:"content";s:52:"{"error":"RecordNotFound","description":"Not found"}";}

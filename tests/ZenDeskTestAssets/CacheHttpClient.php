@@ -2,6 +2,7 @@
 
 namespace ZenDeskTestAssets;
 
+use Zend\Http\Header\ContentEncoding;
 use Zend\Http\Headers;
 use ZenDesk\Rest\Client\Http\Client;
 
@@ -61,9 +62,16 @@ class CacheHttpClient extends Client
 
         $response = parent::send($request);
 
+        $body = $response->getBody();
+        $headers = clone $response->getHeaders();
+        $encoding = $headers->get('Content-Encoding');
+        if ($encoding) {
+            $headers->removeHeader($encoding);
+        }
+
         $data = array(
-            'headers' => $response->getHeaders()->toString(),
-            'content' => $response->getContent(),
+            'headers' => $headers->toString(),
+            'content' => $body,
         );
 
         file_put_contents($cache, serialize($data));
