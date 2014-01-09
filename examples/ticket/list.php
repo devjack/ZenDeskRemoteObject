@@ -1,10 +1,8 @@
 <?php
 
-require __DIR__ . '/../../bootstrap.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
-$config = include __DIR__ . '/../../config/config.php';
-
-$config = new \Zend\ServiceManager\Config($config);
+$config = new \Zend\ServiceManager\Config(include __DIR__ . '/../../config/config.php');
 $serviceManager = new \Zend\ServiceManager\ServiceManager($config);
 
 /** @var \ZenDesk\Service\TicketService $ticket */

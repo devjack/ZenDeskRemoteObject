@@ -3,6 +3,12 @@
 This library provide a REST client to ZenDesk remote call.
 This project is based on RestRemoteObject which allow to control a REST API with objects.
 
+## Installation
+
+```sh
+php composer.phar require "fourmation/zendesk-remote-object:0.6.*"
+```
+
 ## Architecture
 
 This project use Zend\ServiceManager to create entities or services. Each new entities or service calls must use the ServiceManager.
@@ -10,7 +16,7 @@ Each entites and services pilot a remote rest proxy to call remote API. To know 
 
 ## Usage exemple
 
-All examples are in the `examples` folder.
+All examples are in the `examples/` folder.
 
 * retrieve current user :
 

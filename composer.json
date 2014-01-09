@@ -1,4 +1,13 @@
 {
+    "name": "fourmation/zendesk-remote-object",
+    "description": "This library provide a REST client to ZenDesk remote call.",
+    "authors": [
+        {
+            "name": "Blanchon Vincent",
+            "email": "blanchon.vincent@gmail.com",
+            "homepage": "http://github.com/blanchonvincent"
+        }
+    ],
     "require": {
         "fourmation/rest-remote-object": "1.0.*",
         "ocramius/proxy-manager": "master-dev",
