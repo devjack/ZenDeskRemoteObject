@@ -4,7 +4,6 @@
         bootstrap="bootstrap.php"
         colors="true"
         verbose="true"
-        stopOnFailure="true"
         >
     <testsuites>
         <testsuite name="ZenDeskTest">

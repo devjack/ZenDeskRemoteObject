@@ -43,7 +43,7 @@ class HeadersAndContentGuardian implements GuardianInterface
             $message = $content['error'];
             if (isset($content['message'])) {
                 $message .= ', '. $content['message'];
-            } else {
+            } else if (isset($content['description'])) {
                 $message .= ', '. $content['description'] .'. ';
                 if (isset($content['details'])) {
                     foreach($content['details'] as $type) {
