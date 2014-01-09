@@ -42,7 +42,7 @@ $user->save();
 ```php
 $user = new ZenDesk\Entity\User();
 $user->setName('Vincent Blanchon');
-$user->setEmail('blanchon.vincent+zd-integration-test@gmail.com');
+$user->setEmail('email@email.com.au');
 
 $service = $serviceManager->get('ZenDesk\Service\UserService');
 $service->persist($user);
