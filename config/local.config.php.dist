@@ -1,0 +1,14 @@
+<?php
+
+return array(
+    'services' => array(
+        'config' => array(
+            'zendesk' => array(
+                'user'    => '', // http://developer.zendesk.com/documentation/rest_api/introduction.html
+                'token'   => '',
+                'version' => '', // 'v2' by default
+                'debug' => false, // true or false
+            ),
+        ),
+    ),
+);

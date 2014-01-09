@@ -1,0 +1,23 @@
+{
+    "require": {
+        "fourmation/rest-remote-object": "1.0.*",
+        "ocramius/proxy-manager": "master-dev",
+        "zendframework/zend-loader": "2.*",
+        "zendframework/zend-servicemanager": "2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+        "satooshi/php-coveralls": "~0.6"
+    },
+    "autoload": {
+        "psr-0": {
+            "ZenDesk\\" : "src",
+            "ZenDeskTest\\" : "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.7.0-dev"
+        }
+    }
+}
