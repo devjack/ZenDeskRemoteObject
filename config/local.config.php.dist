@@ -4,10 +4,10 @@ return array(
     'services' => array(
         'config' => array(
             'zendesk' => array(
-                'host'    => '',
-                'user'    => '', // http://developer.zendesk.com/documentation/rest_api/introduction.html
-                'token'   => '',
-                'version' => '', // 'v2' by default
+                'host'    => 'host',
+                'user'    => 'username', // http://developer.zendesk.com/documentation/rest_api/introduction.html
+                'token'   => 'token',
+                'version' => 'v2',
                 'debug' => false, // true or false
             ),
         ),
