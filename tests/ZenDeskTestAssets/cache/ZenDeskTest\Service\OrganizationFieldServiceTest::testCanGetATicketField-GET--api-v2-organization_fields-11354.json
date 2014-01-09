@@ -1,16 +1,1 @@
-a:2:{s:7:"headers";s:501:"Server: nginx/1.4.2
-Date: Thu, 09 Jan 2014 05:55:33 GMT
-Content-Type: application/json; charset=UTF-8
-Connection: close
-Status: 200 OK
-X-Zendesk-API-Version: v2
-X-UA-Compatible: IE=Edge,chrome=1
-Cache-Control: must-revalidate, private, max-age=0
-X-Zendesk-Origin-Server: app2.pod2.sac1.zdsys.com
-X-Zendesk-User-Id: 274580849
-X-Request-Id: a36a1b7f4a607e3e88e280e9da05a24e
-X-Runtime: 0.062233
-X-Rack-Cache: miss
-X-Zendesk-Request-Id: 7d0f74b4ae359639ede4
-X-Content-Type-Options: nosniff
-";s:7:"content";s:296:"{"organization_field":{"url":"https://4mation.zendesk.com/api/v2/organization_fields/11354.json","id":11354,"type":"text","key":"test","title":"test","description":"","position":0,"active":true,"regexp_for_validation":null,"created_at":"2013-12-04T22:53:25Z","updated_at":"2013-12-04T22:53:25Z"}}";}
+U2VydmVyOiBuZ2lueC8xLjQuMg0KRGF0ZTogVGh1LCAwOSBKYW4gMjAxNCAwNjowNjozMyBHTVQNCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD1VVEYtOA0KQ29ubmVjdGlvbjogY2xvc2UNClN0YXR1czogMjAwIE9LDQpYLVplbmRlc2stQVBJLVZlcnNpb246IHYyDQpYLVVBLUNvbXBhdGlibGU6IElFPUVkZ2UsY2hyb21lPTENCkNhY2hlLUNvbnRyb2w6IG11c3QtcmV2YWxpZGF0ZSwgcHJpdmF0ZSwgbWF4LWFnZT0wDQpYLVplbmRlc2stT3JpZ2luLVNlcnZlcjogYXBwMTYucG9kMi5zYWMxLnpkc3lzLmNvbQ0KWC1aZW5kZXNrLVVzZXItSWQ6IDI3NDU4MDg0OQ0KWC1SZXF1ZXN0LUlkOiBmMDNiNmM1OTJhNWQxMzlmYjgwMmIwMWI3YmE0MGY0Nw0KWC1SdW50aW1lOiAwLjA2MzM1MQ0KWC1SYWNrLUNhY2hlOiBtaXNzDQpYLVplbmRlc2stUmVxdWVzdC1JZDogMDRkNDQyMGI0ZGEwM2ViNmYwYWYNClgtQ29udGVudC1UeXBlLU9wdGlvbnM6IG5vc25pZmYNCkBAQEBAeyJvcmdhbml6YXRpb25fZmllbGQiOnsidXJsIjoiaHR0cHM6Ly80bWF0aW9uLnplbmRlc2suY29tL2FwaS92Mi9vcmdhbml6YXRpb25fZmllbGRzLzExMzU0Lmpzb24iLCJpZCI6MTEzNTQsInR5cGUiOiJ0ZXh0Iiwia2V5IjoidGVzdCIsInRpdGxlIjoidGVzdCIsImRlc2NyaXB0aW9uIjoiIiwicG9zaXRpb24iOjAsImFjdGl2ZSI6dHJ1ZSwicmVnZXhwX2Zvcl92YWxpZGF0aW9uIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxMy0xMi0wNFQyMjo1MzoyNVoiLCJ1cGRhdGVkX2F0IjoiMjAxMy0xMi0wNFQyMjo1MzoyNVoifX0=

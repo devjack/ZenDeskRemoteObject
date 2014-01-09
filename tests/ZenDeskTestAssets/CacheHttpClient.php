@@ -51,11 +51,11 @@ class CacheHttpClient extends Client
         $callNumber[$cache] = 1;
 
         if (file_exists($cache)) {
-            $data = unserialize(file_get_contents($cache));
+            $data = explode('@@@@@', base64_decode(file_get_contents($cache)));
 
             $response = new Response();
-            $response->setHeaders(Headers::fromString($data['headers']));
-            $response->setContent($data['content']);
+            $response->setHeaders(Headers::fromString($data[0]));
+            $response->setContent($data[1]);
 
             return $response;
         }
@@ -70,11 +70,11 @@ class CacheHttpClient extends Client
         }
 
         $data = array(
-            'headers' => $headers->toString(),
-            'content' => $body,
+            $headers->toString(),
+            $body,
         );
 
-        file_put_contents($cache, serialize($data));
+        file_put_contents($cache, base64_encode(implode('@@@@@', $data)));
 
         return $response;
     }
