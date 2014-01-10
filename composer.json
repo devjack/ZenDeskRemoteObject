@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "fourmation/rest-remote-object": "master-dev",
-        "ocramius/proxy-manager": "master-dev",
+        "fourmation/rest-remote-object": "dev-master",
+        "ocramius/proxy-manager": "dev-master",
         "zendframework/zend-loader": "2.*",
         "zendframework/zend-servicemanager": "2.*"
     },
