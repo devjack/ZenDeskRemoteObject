@@ -1,6 +1,6 @@
 <?php
 
-$config = array(
+return array(
     'abstract_factories' => array(
         'ZenDesk\Factory\ServiceAbstractFactory' => 'ZenDesk\Factory\ServiceAbstractFactory',
     ),
@@ -9,7 +9,3 @@ $config = array(
         'ZenDesk\Rest\Remote' => 'ZenDesk\Rest\Client\RemoteFactory',
     ),
 );
-
-$config = array_replace_recursive($config, include 'local.config.php');
-
-return $config;

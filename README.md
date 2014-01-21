@@ -63,6 +63,10 @@ $service->persist($ticket);
 var_dump($ticket->getId()); // there is now an id
 ```
 
+## Zend Framework 2 integration
+
+A `Module.php` file is provided, you can also use this project like a Zend Framework 2 module.
+
 ## Features list
 
 Entity :

@@ -1,11 +1,8 @@
 <?php
 
-require __DIR__ . '/../../vendor/autoload.php';
+$serviceManager = include __DIR__ . '/../sm.php';
 
-$config = new \Zend\ServiceManager\Config(include __DIR__ . '/../../config/config.php');
-$serviceManager = new \Zend\ServiceManager\ServiceManager($config);
-
-/** @var \ZenDesk\Service\UserService $userService */
+/** @var \ZenDesk\Service\UserService $service */
 $service = $serviceManager->get('ZenDesk\Service\UserService');
 $user = $service->me();
 $user->setName('Vincent Blanchon');

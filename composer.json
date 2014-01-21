@@ -16,14 +16,19 @@
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
-        "satooshi/php-coveralls": "~0.6"
+        "satooshi/php-coveralls": "~0.6",
+        "zendframework/zend-modulemanager": "2.*",
+        "zendframework/zend-test": "2.*"
     },
     "autoload": {
         "psr-0": {
             "ZenDesk\\" : "src",
             "ZenDeskTest\\" : "tests",
             "ZenDeskTestAssets\\" : "tests"
-        }
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     },
     "extra": {
         "branch-alias": {
