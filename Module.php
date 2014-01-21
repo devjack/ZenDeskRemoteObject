@@ -1,6 +1,6 @@
 <?php
 
-namespace ZendDesk;
+namespace ZenDesk;
 
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 

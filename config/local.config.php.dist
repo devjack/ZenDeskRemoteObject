@@ -7,5 +7,6 @@ return array(
         'token'   => 'token',
         'version' => 'v2',
         'debug' => false, // true or false
+        'builders' => array(), // custom builders here
     ),
 );

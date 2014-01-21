@@ -18,7 +18,8 @@
         "phpunit/phpunit": "3.7.*",
         "satooshi/php-coveralls": "~0.6",
         "zendframework/zend-modulemanager": "2.*",
-        "zendframework/zend-test": "2.*"
+        "zendframework/zend-test": "2.*",
+        "zendframework/zend-config": "2.*"
     },
     "autoload": {
         "psr-0": {

@@ -21,6 +21,12 @@ abstract class AbstractTestCase extends PHPUnit_Framework_TestCase
     public function setUp()
     {
         $config = include __DIR__ . '/../../config/service.config.php';
+        $config = array_merge($config, array(
+            'services' => array(
+                'Config' => include __DIR__ . '/../../config/local.config.php',
+            ),
+        ));
+
         $config = new Config($config);
         $this->sm = new ServiceManager($config);
 
@@ -28,7 +34,7 @@ abstract class AbstractTestCase extends PHPUnit_Framework_TestCase
         $rest = $this->sm->get('ZenDesk\Rest\Client');
         $rest->setHttpClient(new CacheHttpClient());
 
-        self::$testName = strtr(get_class($this), '\\', '-') . '::' . $this->getName();
+        self::$testName = strtr(get_class($this), '\\', '-') . '-' . $this->getName();
     }
 
     public function tearDown()
