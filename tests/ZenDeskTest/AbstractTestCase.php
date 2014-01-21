@@ -20,7 +20,7 @@ abstract class AbstractTestCase extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $config = include __DIR__ . '/../../config/config.php';
+        $config = include __DIR__ . '/../../config/service.config.php';
         $config = new Config($config);
         $this->sm = new ServiceManager($config);
 

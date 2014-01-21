@@ -1,11 +1,8 @@
 <?php
 
-require __DIR__ . '/../../vendor/autoload.php';
+$serviceManager = include __DIR__ . '/../sm.php';
 
-$config = new \Zend\ServiceManager\Config(include __DIR__ . '/../../config/config.php');
-$serviceManager = new \Zend\ServiceManager\ServiceManager($config);
-
-/** @var \ZenDesk\Service\TicketService $ticket */
+/** @var \ZenDesk\Service\TicketService $service */
 $service = $serviceManager->get('ZenDesk\Service\TicketService');
 $tickets = $service->getAll();
 
