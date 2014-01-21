@@ -28,7 +28,7 @@ abstract class AbstractTestCase extends PHPUnit_Framework_TestCase
         $rest = $this->sm->get('ZenDesk\Rest\Client');
         $rest->setHttpClient(new CacheHttpClient());
 
-        self::$testName = get_class($this) . '::' . $this->getName();
+        self::$testName = strtr(get_class($this), '\\', '-') . '::' . $this->getName();
     }
 
     public function tearDown()
