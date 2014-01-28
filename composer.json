@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "fourmation/rest-remote-object": "1.0.0-BETA1",
+        "fourmation/rest-remote-object": "1.0.0-BETA2",
         "ocramius/proxy-manager": "0.5.0",
         "zendframework/zend-loader": "2.*",
         "zendframework/zend-servicemanager": "2.*"
